@@ -1,15 +1,18 @@
 package ThinkingInJava4thEd.a_Everything_is_an_object;
 
-// Find the code fragments involving ATypeName and turn them into a program that compiles and runs.
+// Turn the DataOnly code fragments into a program that compiles and runs
 
-public class _3 {
+public class _04 {
     public static void main(String[] args) {
-        ATypeName a = new ATypeName();
-        a.show();
+        DataOnly d = new DataOnly();
+        d.i = 1;
+        d.d = 1.01;
+        d.b = false;
+        d.show();
     }
 }
 
-class ATypeName {
+class DataOnly {
     int i;
     double d;
     boolean b;

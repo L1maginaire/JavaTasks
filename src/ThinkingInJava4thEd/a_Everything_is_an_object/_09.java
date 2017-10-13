@@ -2,7 +2,7 @@ package ThinkingInJava4thEd.a_Everything_is_an_object;
 
 // Write a program that demonstrates that autoboxing works for all the primitive // types and their wrappers.
 
-public class _9 {
+public class _09 {
     public static void main(String[] args) {
         boolean b = false;
         char c = 'Q';
