@@ -2,7 +2,7 @@ package ThinkingInJava4thEd.a_Everything_is_an_object;
 
 // Turn the AllColorsOfTheRainbow into a program that compiles and runs.
 
-public class _11 {
+public class t_11 {
     public static void main(String[] args) {
         AllTheColorsOfTheRainbow atc = new AllTheColorsOfTheRainbow();
         atc.changeColor(1);

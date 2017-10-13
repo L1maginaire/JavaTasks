@@ -4,7 +4,7 @@ package ThinkingInJava4thEd.b_Operators;
 
 import static ThinkingInJava4thEd.b_Operators.PrintTest.print;
 
-public class _02 {
+public class t_02 {
     static void f(FloatDemo2 ex) {
         ex.f = 3.14f;
     }

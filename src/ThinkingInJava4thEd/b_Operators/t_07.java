@@ -5,7 +5,7 @@ package ThinkingInJava4thEd.b_Operators;
 
 import java.util.Random;
 
-public class _07 {
+public class t_07 {
     public static void main(String[] args) {
         boolean b = flip();
         if (b == true) {

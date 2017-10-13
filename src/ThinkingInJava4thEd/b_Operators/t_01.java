@@ -4,7 +4,7 @@ package ThinkingInJava4thEd.b_Operators;
 
 import static ThinkingInJava4thEd.b_Operators.PrintTest.print;
 
-public class _01 {
+public class t_01 {
     public static void main(String[] args) {
         print("Hello");
     }

@@ -2,7 +2,7 @@ package ThinkingInJava4thEd.a_Everything_is_an_object;
 
 // Turn the DataOnly code fragments into a program that compiles and runs
 
-public class _04 {
+public class t_04 {
     public static void main(String[] args) {
         DataOnly d = new DataOnly();
         d.i = 1;

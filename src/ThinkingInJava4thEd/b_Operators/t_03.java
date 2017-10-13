@@ -3,7 +3,7 @@ package ThinkingInJava4thEd.b_Operators;
 //p99
 // Create a class containing a float and use it to demonstrate aliasing
 
-public class _03 {
+public class t_03 {
     public static void main(String[] args) {
         FloatDemo fd0 = new FloatDemo();
         FloatDemo fd1 = new FloatDemo();

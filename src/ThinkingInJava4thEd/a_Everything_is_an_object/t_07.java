@@ -2,7 +2,7 @@ package ThinkingInJava4thEd.a_Everything_is_an_object;
 
 // Turn the Incrementable code fragments into a working program.
 
-public class _07 {
+public class t_07 {
     public static void main(String[] args) {
         System.out.println("StaticTest.i= " + StaticTest.i);
         StaticTest st1 = new StaticTest();
