@@ -61,7 +61,6 @@ class RandomShapeGenerator2 {
                 return new Triangle2();
         }
     }
-
 }
 
 class Square2 extends Shape2 {

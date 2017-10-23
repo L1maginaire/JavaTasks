@@ -54,7 +54,6 @@ class RandomShapeGenerator {
                 return new Triangle();
         }
     }
-
 }
 
 class Square extends Shape {
