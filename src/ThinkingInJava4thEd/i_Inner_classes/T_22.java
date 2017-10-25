@@ -1,15 +1,13 @@
 package ThinkingInJava4thEd.i_Inner_classes;
 
-//p292
-// Create a class that holds a String, and has a toString() method that displays this String. Add several instances of your new class to a  Sequence3 ojbect, then display them.
+// Implement reverseSelector() in Sequence.java
 
-public class T_02 {
-}
+public class T_22 {}
 
-class Word {
+class Word3 {
     private String word;
 
-    public Word(String s) {
+    public Word3(String s) {
         word = s;
     }
 
@@ -18,7 +16,7 @@ class Word {
     }
 }
 
-interface Selector {
+interface Selector3 {
     boolean end();
 
     Object current();
@@ -26,17 +24,37 @@ interface Selector {
     void next();
 }
 
-class Sequence {
+class Sequence3 {
     private Object[] items;
     private int next = 0;
+    private int last;
 
-    public Sequence(int size) {
+    public Sequence3(int size) {
         items = new Object[size];
+        this.last = size-1;
     }
 
     public void add(Object x) {
         if (next < items.length)
             items[next++] = x;
+    }
+
+    private class ReverseSelector implements Selector3{
+        private int i = last;
+        @Override
+        public boolean end() {
+            return i == -1;
+        }
+
+        @Override
+        public Object current() {
+            return items[i];
+        }
+
+        @Override
+        public void next() {
+            if(i>=0) i--;
+        }
     }
 
     private class SequenceSelector implements Selector3 {
@@ -58,16 +76,17 @@ class Sequence {
     public Selector3 selector() {
         return new SequenceSelector();
     }
+    public Selector3 reverseSelector() {return new ReverseSelector(); }
 
     public static void main(String[] args) {
-        Word3 w1 = new Word3("Word3");
+        Word3 w1 = new Word3("Word");
         Word3 w2 = new Word3("Sentence");
         Word3 w3 = new Word3("Book");
         Sequence3 message = new Sequence3(3);
         message.add(w1);
         message.add(w2);
         message.add(w3);
-        Selector3 sel = message.selector();
+        Selector3 sel = message.reverseSelector();
         while (!sel.end()) {
             System.out.print(sel.current() + " ");
             sel.next();

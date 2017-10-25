@@ -1,7 +1,7 @@
 package ThinkingInJava4thEd.i_Inner_classes;
 
 //p293
-// Add a method to the class Sequence.SequenceSelector that produces the reference to the outer class Sequence.
+// Add a method to the class Sequence3.SequenceSelector that produces the reference to the outer class Sequence3.
 
 public class T_04 {}
 
@@ -18,7 +18,7 @@ class Sequence2 {
             items[next++] = x;
     }
 
-    private class SequenceSelector implements Selector {
+    private class SequenceSelector implements Selector3 {
         private int i = 0;
 
         public Sequence2 getRef(){
@@ -37,7 +37,7 @@ class Sequence2 {
         }
     }
 
-    public Selector selector() {
+    public Selector3 selector() {
         return new SequenceSelector();
     }
 }
