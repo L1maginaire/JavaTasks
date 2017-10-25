@@ -39,7 +39,7 @@ class Sequence {
             items[next++] = x;
     }
 
-    private class SequenceSelector implements Selector3 {
+    private class SequenceSelector implements Selector {
         private int i = 0;
 
         public boolean end() {
@@ -55,19 +55,19 @@ class Sequence {
         }
     }
 
-    public Selector3 selector() {
+    public Selector selector() {
         return new SequenceSelector();
     }
 
     public static void main(String[] args) {
-        Word3 w1 = new Word3("Word3");
-        Word3 w2 = new Word3("Sentence");
-        Word3 w3 = new Word3("Book");
-        Sequence3 message = new Sequence3(3);
+        Word w1 = new Word("Word");
+        Word w2 = new Word("Sentence");
+        Word w3 = new Word("Book");
+        Sequence message = new Sequence(3);
         message.add(w1);
         message.add(w2);
         message.add(w3);
-        Selector3 sel = message.selector();
+        Selector sel = message.selector();
         while (!sel.end()) {
             System.out.print(sel.current() + " ");
             sel.next();
