@@ -8,12 +8,14 @@ package ThinkingInJava4thEd.j_Collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class T_01 {}
+public class T_01 {
 
-class Gerbil {
+}
+
+class Gerbil2 {
     int num;
 
-    public Gerbil(int x) {
+    public Gerbil2(int x) {
         this.num = x;
     }
 
@@ -22,9 +24,9 @@ class Gerbil {
     }
 
     public static void main(String[] args) {
-        List<Gerbil> list = new ArrayList<Gerbil>();
+        List<Gerbil2> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            list.add(new Gerbil(i));
+            list.add(new Gerbil2(i));
         }
         for (int i = 0; i < 10; i++) {
             list.get(i).hop();
