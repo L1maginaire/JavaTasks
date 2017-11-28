@@ -1,5 +1,7 @@
 package ThinkingInJava4thEd.j_Collections;
 
+// Modify Exercise 16 so that you keep a count of the occurence of each vowel.
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collection;
