@@ -1,5 +1,8 @@
 package ThinkingInJava4thEd.j_Collections;
 
+// Fill a LinkedHashMap with String keys and objects of your choice. Now extract the pairs,
+// sort them based on the keys, and reinsert them into the Map.
+
 import java.util.*;
 
 public class T_23 {
