@@ -7,7 +7,7 @@ package ThinkingInJava4thEd.e_Access_control;
 
 //import static SomePackage.Debug.Dclass.*;
 
-import static SomePackage.Debugoff.Dclass.*;
+import static ThinkingInJava4thEd.SomePackage.Debugoff.Dclass.*;
 
 public class T_03 {
     public static void main(String[] args) {

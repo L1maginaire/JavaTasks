@@ -1,6 +1,6 @@
 package ThinkingInJava4thEd.h_Interfaces;
 
-import SomePackage.Debug.Interface1;
+import ThinkingInJava4thEd.SomePackage.Debug.Interface1;
 
 // Prove that all the methods in an interface are automatically public
 
